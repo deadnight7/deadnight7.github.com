@@ -1,60 +1,402 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+  
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Deadnight7.github.com by deadnight7</title>
+    <title>Chirag Pandit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+ <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+	
+	.navbar-inverse .navbar-inner {
+
+-webkit-box-shadow: 0px 0px 43px 17px rgb(0, 0, 0);
+-moz-box-shadow: 0px 0px 43px 17px rgb(0, 0, 0);
+-o-box-shadow: 0px 0px 43px 17px rgb(0, 0, 0);
+box-shadow: 0px 0px 43px 17px rgb(0, 0, 0);
+}
+    </style>
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Deadnight7.github.com</h1>
-        <p>My developer portfolio of all my projects at github</p>
+  
+  <body data-spy="scroll" data-target=".navbar">
 
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">deadnight7.github.com</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="#home">Home</a>
+              </li>
+              <li class="">
+                <a href="#projects">My Projects</a>
+              </li>
+              <li class="">
+                <a href="">Contact me @</a>
+              </li>
+			  <li class="">
+<p>
+  <a href="https://facebook.com/chirag.pandit07" class="btn btn-primary" type="button"><i class="icon-thumbs-up icon-white"></i> fb</a>
+  
+  <a href = "https://github.com/deadnight7?tab=repositories" class="btn" type="button"><i class=" icon-pencil icon-black"></i> Github</a>
 
-        <p class="view"><a href="https://github.com/deadnight7">View My GitHub Profile</a></p>
+</p>
+			  </li>
+			  <li class="">
+<a href="">+91 9004300630</a>
+			  </li>
+             
+			  <li class="">
 
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
+			  </li>
+            </ul>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
+<div class="jumbotron masthead" id="home">
+  <div class="container">
+    <h1>Chirag Pandit</h1>
+    <p>
+	Interactive Applications Developer and UX Desiginer.
+	<br/><h2>out.println("Hello World...!");</h2>
+	<br/></p><p>
+	<br/><h2>Welcome to my playground into engineering.</h2>
+	</p>
     
+	
+	
+    </ul>
+  </div>
+</div>
+
+<div class="bs-docs-social">
+  <div class="container">
+    <ul class="bs-docs-social-buttons">
+      
+	  
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<div class="container" id="projects">
+
+  <div class="marketing">
+
+    <h1>Projects Engineered...<br/> </h1>
+    <p class="marketing-byline">You are always welcome to join in anytime</p>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+	  <style>
+		#sklogo:hover {
+			background : url (img/logo2.png);
+		}
+	  </style>
+      <div class="featurette">
+        <a id="sklogo" href="https://github.com/deadnight7/saikiranBookstoreApp">
+		<!-- The Main Lgogo-->
+		<img id="sklogo" class="featurette-image " src="assets/img/logo3.png"/>
+			
+		</a>
+      <hr class="featurette-divider">
+	  <!-- The Sub Lgogo-->
+		<img class="featurette-image pull-right" src="assets/img/book.png"/>
+		
+			
+        <h2 class="featurette-heading">Project Saikiran. <span class="muted">aka saikiranBookStoreApp</span></h2>
+		
+        <p class="lead">An Online Retail Management and Custommer Order Processing System. 
+		</p>
+		<ul class="text-left">
+<li>A full fledged online retail website system using java technologies</li>
+<li>Frontend supported with HTML5 and CSS3 </li>
+<li>Images used as resources only when they are in a real need <em>For Eg. A product informational purpose</em>
+</li>
+<li>Ajax powered site <em>using jQuery as base for javascript</em> search for both Administrator as well as Clients</li>
+<li>Product image gallery for both the usecases admin/client</li>
+<li>Quick dashboard views,</li>
+<li>Dashboard consists of the monthly sales and reporting charts powered by google charts
+
+<ul>
+<li>Some of the charts include </li>
+<li>Top most view products</li>
+<li>Top sold products</li>
+<li>The monthly sales revenue and purchases being made by the store</li>
+</ul>
+</li>
+</ul>
+      </div>
+
+      <hr class="featurette-divider">
+<!--
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="assets/img/examples/browser-icon-firefox.png">
+        <h2 class="featurette-heading">Project Saikiran <span class="muted">aka saikiranBookstoreApp</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="assets/img/examples/browser-icon-safari.png">
+        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+-->
+
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+<!--
+    <div class="row-fluid">
+      <div class="span4">
+        <img class="marketing-img" src="assets/img/bs-docs-twitter-github.png">
+        <h2>By nerds, for nerds.</h2>
+        <p>Built at Twitter by <a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>, Bootstrap utilizes <a href="http://lesscss.org">LESS CSS</a>, is compiled via <a href="http://nodejs.org">Node</a>, and is managed through <a href="http://github.com">GitHub</a> to help nerds do awesome stuff on the web.</p>
+      </div>
+      <div class="span4">
+        <img class="marketing-img" src="assets/img/bs-docs-responsive-illustrations.png">
+        <h2>Made for everyone.</h2>
+        <p>Bootstrap was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via <a href="./scaffolding.html#responsive">responsive CSS</a> as well.</p>
+      </div>
+      <div class="span4">
+        <img class="marketing-img" src="assets/img/bs-docs-bootstrap-features.png">
+        <h2>Packed with features.</h2>
+        <p>A 12-column responsive <a href="./scaffolding.html#gridSystem">grid</a>, dozens of components, <a href="./javascript.html">JavaScript plugins</a>, typography, form controls, and even a <a href="./customize.html">web-based Customizer</a> to make Bootstrap your own.</p>
+      </div>
+    </div>
+
+    <hr id="aboutme" class="soften">
+
+    <h2>Who am I... # Your friendly neighbourhood &lt;application developer/&gt;</h2>
+    <p class="marketing-byline">For even more sites built with Bootstrap, <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">visit the unofficial Tumblr</a> or <a href="./getting-started.html#examples">browse the examples</a>.</p>
+    <div class="row-fluid">
+      <ul class="thumbnails example-sites">
+        <li class="span3">
+          <a class="thumbnail" href="http://soundready.fm/" target="_blank">
+            <img src="assets/img/example-sites/soundready.png" alt="SoundReady.fm">
+          </a>
+        </li>
+        <li class="span3">
+          <a class="thumbnail" href="http://kippt.com/" target="_blank">
+            <img src="assets/img/example-sites/kippt.png" alt="Kippt">
+          </a>
+        </li>
+        <li class="span3">
+          <a class="thumbnail" href="http://www.gathercontent.com/" target="_blank">
+            <img src="assets/img/example-sites/gathercontent.png" alt="Gather Content">
+          </a>
+        </li>
+        <li class="span3">
+          <a class="thumbnail" href="http://www.jshint.com/" target="_blank">
+            <img src="assets/img/example-sites/jshint.png" alt="JS Hint">
+          </a>
+        </li>
+      </ul>
+     </div>
+
+
+-->
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Designed by <a href="https://fb.com/chirag.pandit07" target="_blank">Chirag Pandit</a> on Feb 2013.
+		
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+    <script>
+		$('#navbar').scrollspy();
+	</script>
+
+
+
   </body>
 </html>
